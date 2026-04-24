@@ -1,5 +1,3 @@
-link: https://egzamin-informatyk.pl/arkusz-praktyczny-inf03-2025-06-04/
-
 Zapytanie 1: --> działa
  
 SELECT id_zadania, zadanie, data FROM zadania;
@@ -12,6 +10,6 @@ Zapytanie 3: --> działa
 
 DELETE FROM zadania WHERE id_zadania = 2;
 
-Zapytanie 4: --> działa !!!! 
+Zapytanie 4: --> działa
 
 SELECT osoby.imie, osoby.nazwisko, osoby.telefon, zadania.zadanie, zadania.data FROM osoby JOIN zadania ON osoby.id_osoba = zadania.osoba_id;
