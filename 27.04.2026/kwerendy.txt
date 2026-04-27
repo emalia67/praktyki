@@ -1,0 +1,15 @@
+Zapytanie 1: --> działa
+
+SELECT nazwa, ilosc, opis, cena, zdjecie FROM produkty WHERE rodzaje_id = 1 OR rodzaje_id = 2;
+
+Zapytanie 2: --> działa
+
+SELECT produkty.nazwa, producenci.nazwa FROM produkty JOIN producenci ON produkty.producenci_id = producenci.id WHERE produkty.ilosc <10 AND produkty.rodzaje_id = 1;
+
+Zapytanie 3: --> działa
+
+CREATE USER 'anna' IDENTIFIED BY '@nna23';
+
+Zapytanie 4: --> działa
+
+INSERT INTO produkty VALUES (NULL, 1, 4, 'owoc1', 10, '', 9.99, 'owoce.jpg');
