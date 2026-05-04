@@ -1,0 +1,16 @@
+Zapytanie 1: --> działa
+
+SELECT id, nazwa FROM szczyty ORDER BY wysokosc DESC;
+
+Zapytanie 2: --> działa
+
+SELECT plik, nazwa FROM szczyty WHERE id BETWEEN 1 AND 10;
+
+Zapytanie 3: --> działa
+
+SELECT szczyty.plik, szczyty.nazwa, szczyty.wysokosc, szczyty.pasmo, opis.opis FROM szczyty JOIN opis ON szczyty.id = opis.szczyty_id;
+
+Zapytanie 4: --> działa
+
+SELECT nazwa, wysokosc, pasmo FROM szczyty WHERE pasmo LIKE 'Beskid %';
+
