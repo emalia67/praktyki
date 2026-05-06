@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Sklep</title>
+</head>
+<body>
+    <header>
+        <h1>Ozdoby - sklep</h1>
+    </header>
+    <nav>
+        <h2>OZDOBY</h2>
+        <a href="galeria.html">Galeria</a><br>
+        <a href="zamowienie.php">Zamówienie</a>
+    </nav>
+    <main>
+        <img src="choinka.jpg" onmouseover="hover('choinka')" alt="ozdoby choinkowe" id="choinka">
+        <img src="mikolaj.jpg" onmouseover="hover('mikolaj')" alt="ozdoby choinkowe" id="mikolaj">
+        <img src="renifer.jpg" onmouseover="hover('renifer')" alt="ozdoby choinkowe" id="renifer">
+        <p>Wybierz ozdobę w kółku</p>
+        <p id="wynik"></p>
+        <script>
+            function hover(nazwa)
+            {
+
+                if(nazwa == 'choinka')
+                {
+                    document.getElementById('wynik').innerHTML = "Wybrałeś choinkę. Cena 10zł";
+                }else if(nazwa == 'mikolaj')
+                {
+                    document.getElementById('wynik').innerHTML = "Wybrałeś Mikołaja. Cena 12zł";
+                }else{
+                    document.getElementById('wynik').innerHTML = "Wybrałeś renifera. Cena 8zł"
+                }
+            }
+        </script>
+    </main>
+    <section>
+        <img src="animacja.gif" alt="animacja">
+    </section>
+    <footer>
+        <h3>Autor strony: 00000000000</h3>
+    </footer>
+</body>
+</html>
