@@ -1,0 +1,56 @@
+*
+{
+    font-family: Garamond;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+header, footer
+{
+    background-color: forestgreen;
+    padding: 10px;
+}
+
+nav, section
+{
+    background-color: forestgreen;
+    height: 490px;
+    width: 25%;
+    font-size: 30px;
+}
+
+main
+{
+    background-color: chocolate;
+    height: 490px;
+    width: 50%;
+    font-size: 25px;
+}
+
+main img
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 10px;
+}
+
+input, button
+{
+    color: green;
+}
+
+nav, main, section
+{
+    float: left;
+}
+
+footer
+{
+    clear: both;
+}
+
+
+

@@ -1,0 +1,15 @@
+Zapytanie 1: --> działa
+
+SELECT nazwa, cena, opis FROM abonamenty;
+
+Zapytanie 2: --> działa
+
+SELECT ROUND(AVG(cena), 2) AS Srednio_abonament FROM abonamenty;
+
+Zapytanie 3: --> działa
+
+SELECT abonamenty.nazwa, cechy.cecha FROM abonamenty JOIN szczegolyabonamentu ON szczegolyabonamentu.abonamenty_id = abonamenty.id JOIN cechy ON szczegolyabonamentu.cechy_id = cechy.id WHERE abonamenty.id = 1;
+
+Zapytanie 4: --> działa
+
+SELECT nazwa, opis FROM abonamenty WHERE opis LIKE '%zdrowie%' OR opis LIKE '%opieką%';

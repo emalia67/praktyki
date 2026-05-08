@@ -1,0 +1,15 @@
+zapytanie 1: --> działa
+
+SELECT id, nazwa, opis, cena FROM podzespoly WHERE cena < 1000;
+
+zapytanie 2: --> działa
+
+SELECT nazwa, opis FROM podzespoly WHERE dostepnosc = 1 AND producenci_id = 1;
+
+zapytanie 3: --> działa
+
+SELECT podzespoly.nazwa, producenci.nazwa FROM podzespoly JOIN producenci ON producenci.id = podzespoly.producenci_id;
+
+zapytanie 4: --> działa
+
+UPDATE producenci SET nazwa = 'PATRIOT' WHERE id = 8;

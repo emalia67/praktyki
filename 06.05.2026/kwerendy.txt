@@ -1,0 +1,28 @@
+Zapytanie 1: --> działa
+
+CREATE TABLE zamowienia (
+    id int NOT NULL,
+    imie varchar(15),
+    nazwisko varchar(30),
+    adres_email varchar(50),
+    liczba_choinek int,
+    liczba_mikolajow int,
+    liczba_reniferow int,
+    info BOOLEAN
+);
+
+Zapytanie 2: --> działa
+
+ALTER TABLE zamowienia ADD PRIMARY KEY (id);
+
+Zapytanie 3: --> działa
+
+CREATE USER 'klient'@'localhost' IDENTIFIED BY 'klient123';
+
+Zapytanie 4: --> działa
+
+GRANT INSERT ON sklep.* TO 'klient'@'localhost';
+
+Zapytanie 5: -->
+
+INSERT INTO zamowienia (imie, nazwisko, adres_email) VALUES ('Jan', 'Kowalski', 'jKowalski@poczta.pl');

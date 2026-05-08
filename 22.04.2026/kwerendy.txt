@@ -1,0 +1,15 @@
+zapytanie 1: --> działa
+
+SELECT * FROM wycieczki WHERE poczatek = "Muszyna" OR poczatek = "Wieliczka";
+
+zapytanie 2: --> chyba działa
+
+SELECT wycieczki.nazwa, wycieczki.opis, wycieczki.poczatek, zdjecia.zrodlo FROM wycieczki JOIN zdjecia ON wycieczki.id = zdjecia.id;
+
+zapytanie 3: --> działa
+
+SELECT COUNT(id) FROM wycieczki;
+
+zapytanie 4: --> działa
+
+ALTER TABLE wycieczki ADD ocena INT;

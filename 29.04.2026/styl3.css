@@ -1,0 +1,80 @@
+*
+{
+    font-family: Arial;
+    margin: 0;
+}
+
+header, footer
+{
+    background-color: saddlebrown;
+    color: white;
+    height: 100px;
+    float: left;
+}
+
+header.left, footer.left
+{
+    width: 55%;
+    font-size: 120%;
+}
+
+header.mid, footer.mid
+{
+    width: 25%;
+}
+
+header.right, footer.right
+{
+    width: 20%;
+    text-align: right;
+}
+
+main
+{
+    background-color: snow;
+    padding: 70px;
+}
+
+a
+{
+    border: 2px dotted saddlebrown;
+    background-color: snow;
+    color: saddlebrown;
+    padding: 20px;
+    line-height: 100px;
+}
+
+ol
+{
+    list-style-type: lower-alpha;
+}
+
+h3
+{
+    margin-top: 100px;
+}
+
+form
+{
+    line-height: 25px;
+}
+
+footer.mid > h5 
+{
+    margin: 20px;
+}
+
+footer.right > p
+{
+    margin-top: 20px;
+}
+
+h2
+{
+    margin: 20px 0;
+}
+
+header.mid > p
+{
+    margin-top: 15px;
+}
